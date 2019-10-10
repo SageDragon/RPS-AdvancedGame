@@ -1,0 +1,28 @@
+body{
+    background-color: seagreen;
+}
+
+#chat-log {
+    height: 200px;
+    overflow: scroll;
+    background-color: lightgray;
+}
+
+#chat-log li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+form[role=login] {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+form[role=chat] {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.mainline {
+    padding: 15px 5px;
+}
