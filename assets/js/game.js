@@ -32,12 +32,12 @@ var secondPlayer = {
 };
 
 
-let playerName =$("#playerName").val()
+let playerName =$("#player-name").val()
 let chatMessage =$("#chat").val()
 
 
-$("#login").on("click", function(event){
-    event.preventdefault();
+$("#login").click(function(event){
+    event.preventDefault();
     clicktest++;
     db.ref().set({
         clickcounter: clicktest
@@ -47,7 +47,7 @@ $("#login").on("click", function(event){
 });
 
 $("#send-button").on("click", function(event){
-    event.preventdefault();
+    event.preventDefault();
     clicktest++;
     db.ref().set({
         clickcounter: clicktest
